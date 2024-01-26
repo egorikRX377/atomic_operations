@@ -62,5 +62,6 @@ int main()
 	bool success_weak = atomicInt.compare_exchange_weak(expected, desired);
 	std::cout << "Weak exchange: " << std::boolalpha << success_weak << ", atomicInt: " << atomicInt.load() << std::endl;
 
+
 	return 0;
 }
